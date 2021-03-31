@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Roomba
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+10x10 grid
+ Display roomba in one of them, may need to have direction indication
+2 buttons:
+1) move roomba forward 1 space
+2) turn clockwise, could be configured
+
+Hit wall then turn clockwise
+Obstacles later on.  Assume obstacles will just be 1x1, aka points.
+
+Extensions.
+Auto-movement
+
+10x10 grid on table.
+
 
 ## Available Scripts
 
