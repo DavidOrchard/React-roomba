@@ -1,19 +1,19 @@
 # Roomba
 
-10x10 grid
- Display roomba in one of them, may need to have direction indication
-2 buttons:
-1) move roomba forward 1 space
-2) turn clockwise, could be configured
+Please build a much simplified Roomba.  A roomba is a vacuuming robot but we will be controlling it.
 
-Hit wall then turn clockwise
-Obstacles later on.  Assume obstacles will just be 1x1, aka points.
 
-Extensions.
-Auto-movement
+Display a 10x10 grid that represents a room. Implement the grid in markup, not css, and ensure that each cell has a data-testid attribute that is of the form `${x}-${y}`. Display roomba in one of the grid cells and ensure it contains the text `X`.  The starting position for Roomba is in position x:1, y:1.
 
-10x10 grid on table.
+The roomba's direction should be shown simply as a string with `up`, `left`, `down`, or `right`.  The starting direction for the Roomba is `up`.
 
+Implement 2 buttons to control the roomba.
+
+1. move: move roomba forward 1 space. If the roomba is at a wall and tries to go forward into the wall, then turn clockwise 90 degrees.
+
+2. rotate: clockwise 90 degrees
+
+Ensure that the buttons have the `move` and `rotate` text
 
 ## Available Scripts
 

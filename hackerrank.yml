@@ -1,0 +1,24 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  scoring:
+    command: yarn install && rm -rf ./junit.xml && ./node_modules/.bin/react-scripts test --watchAll=false --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit
+    files:
+      - junit.xml
+    # Define hidden test cases and declare file paths below to evaluate candidates' submissions.
+    #
+    # Learn more:
+    # https://support.hackerrank.com/hc/en-us/articles/4761491631635-Hidden-Test-Cases-for-Front-End-Back-End-and-Full-Stack-Questions
+    #
+    hidden_files_paths:
+      - src/components/BoardData/BoardData.test.tsx
+      - src/App.hidden.test.tsx
+  readonly_paths:
+    - src/App.test.js
+  ide_config:
+    default_open_files:
+      - src/App.tsx
+    project_menu:
+      run: yarn start
+      install: yarn install
+      test: yarn test
